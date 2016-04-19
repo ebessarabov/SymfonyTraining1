@@ -5,6 +5,7 @@ namespace BatteryBundle\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use BatteryBundle\Entity\Battery;
 
 class BatteryType extends AbstractType
 {
@@ -27,7 +28,7 @@ class BatteryType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'BatteryBundle\Entity\Battery'
+            'data_class' => Battery::class
         ));
     }
 }

@@ -4,17 +4,16 @@ namespace BatteryBundle\Controller;
 
 use BatteryBundle\Entity\Battery;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use BatteryBundle\Form\BatteryType;
 
 /**
- * Class DefaultController
+ * Class StatisticController
  * @package BatteryBundle\Controller
  */
-class DefaultController extends Controller
+class StatisticController extends Controller
 {
     /**
      * @return Response

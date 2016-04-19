@@ -8,7 +8,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 /**
  * Battery
  *
- * @ORM\Table(name="battery")
+ * @ORM\Table(name="batteries")
  * @ORM\Entity(repositoryClass="BatteryBundle\Repository\BatteryRepository")
  */
 class Battery
@@ -36,6 +36,9 @@ class Battery
      * @Assert\Type(
      *     type="integer",
      *     message="The value {{ value }} is not a valid {{ type }}."
+     * )
+     * @Assert\Range(
+     *      min = 1
      * )
      * @Assert\NotBlank()
      * @ORM\Column(name="count", type="integer", nullable=false)

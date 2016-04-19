@@ -1,12 +1,16 @@
 <?php
 
-namespace BatteryBundle\Tests\Controller;
+namespace tests\BatteryBundle;
 
 use Doctrine\ORM\EntityManager;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 use Symfony\Component\HttpKernel\Client;
 
-class DefaultControllerTest extends WebTestCase
+/**
+ * Class StatisticControllerTest
+ * @package tests\BatteryBundle
+ */
+class StatisticControllerTest extends WebTestCase
 {
     /**
      * @var EntityManager

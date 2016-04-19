@@ -1,11 +1,11 @@
 homepage:
     path:     /
-    defaults: { _controller: BatteryBundle:Default:index }
+    defaults: { _controller: BatteryBundle:Statistic:index }
 
 add:
     path:     /add
-    defaults: { _controller: BatteryBundle:Default:add}
+    defaults: { _controller: BatteryBundle:Statistic:add}
 
 reset:
     path:     /reset
-    defaults: { _controller: BatteryBundle:Default:reset}
+    defaults: { _controller: BatteryBundle:Statistic:reset}

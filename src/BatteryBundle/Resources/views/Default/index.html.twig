@@ -1,0 +1,27 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+    <h1>Welcome to Recycle Batteries application</h1>
+    <p>Click <a href="{{ path('add') }}">here</a> to add new batteries to the box.</p>
+    <table border="1">
+        <thead>
+        <tr>
+            <th>Battery type</th>
+            <th>Total count</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for battery in batteries %}
+            <tr>
+                <td>{{ battery.type }}</td>
+                <td>{{ battery.total }}</td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="2">There are no batteries</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <input type="submit" value="Reset all data" onclick="location.href='{{ path('reset') }}'">
+{% endblock %}
